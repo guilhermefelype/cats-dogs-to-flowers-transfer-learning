@@ -286,11 +286,11 @@ quick_test()
 
 ## 📈 Expected Results
 
-| Model Type | Accuracy | Training Time | Parameters Trained |
-|------------|----------|---------------|--------------------||
-| **Base Model (Cats vs Dogs)** | ~80-90% | ~15 epochs | 1.7M parameters |
-| **Transfer Learning (Flowers)** | ~35-40% | ~15 epochs | 325 parameters |
-| **Fine-Tuned Model (Flowers)** | ~50-65% | ~25 epochs total | ~1.6M parameters |
+| Model Type                      | Accuracy   | Training Time     | Parameters Trained |
+|--------------------------------|------------|-------------------|--------------------|
+| **Base Model (Cats vs Dogs)**  | ~80–90%    | ~15 epochs        | 1.7M               |
+| **Transfer Learning (Flowers)**| ~35–50%    | ~15 epochs        | 325                |
+| **Fine-Tuned Model (Flowers)** | ~50–65%    | ~30 epochs total  | ~1.6M              |
 
 **Key Insights:**
 - Fine-tuning provides **10-20% accuracy improvement** over basic transfer learning
@@ -298,7 +298,7 @@ quick_test()
 - **Better convergence** and reduced overfitting
 
 ## 📝 Project Structure
-
+```
 Transfer Learning Project/
 ├── Dog_X_Cat_CNN_TF.ipynb           # Main notebook with complete implementation
 ├── README.md                         # Project documentation
@@ -313,7 +313,7 @@ Transfer Learning Project/
 ├── output_dog_x_cat_model.png          # Base model performance
 ├── output_flowers_model.png            # Transfer learning performance
 └── output_flowers_fine_tuning_model.png # Fine-tuning performance
-
+```
 ### Directory Descriptions
 
 - **`models/`**: Contains trained models saved in Keras format (.keras)
@@ -376,9 +376,5 @@ A: Absolutely! The transfer learning and fine-tuning principles demonstrated her
 
 **Q: Why use Google Colab?**
 A: GPU acceleration significantly speeds up training, especially for fine-tuning operations. What might take hours on CPU can be completed in minutes with GPU acceleration.
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
