@@ -177,7 +177,6 @@ Fine-tuning is an advanced transfer learning technique where we:
 
 - **Gradual Unfreezing**: Start with frozen base, gradually unfreeze layers
 - **Learning Rate Scheduling**: Use lower learning rates for pre-trained layers
-- **Early Stopping**: Monitor validation loss to prevent overfitting
 - **Data Augmentation**: Maintain augmentation throughout fine-tuning
 
 ### Performance Improvements
